@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    border: solid black 1px;
+    padding: .5rem;
+}
+
+header > div#titulo{
+    display: flex;
+    justify-content: space-around;
+}
+header > h1#tituloPrincipal{
+    font-family: 'DelaGothicOne';
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+
+}
+
+
+div#first{
+    /*
+    background-image: url("../images/modelos/retrato-guapo-sonriente-elegante-joven-modelo-vestido-camisa-cuadros-roja-hombre-moda-posando.jpg");
+    background-size: auto;
+    
+    height: 900px;
+    border: solid red 1px;*/
+}
+div#first > img{
+    height: auto;
+    width: 100%;
+}
