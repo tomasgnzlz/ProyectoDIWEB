@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 
 header{
@@ -23,9 +22,13 @@ header > h1#tituloPrincipal{
     color: white;
 
 }
+#login{
+    color: red;
+}
 
 
-div#first{
+
+div.first{
     /*
     background-image: url("../images/modelos/retrato-guapo-sonriente-elegante-joven-modelo-vestido-camisa-cuadros-roja-hombre-moda-posando.jpg");
     background-size: auto;
@@ -33,7 +36,7 @@ div#first{
     height: 900px;
     border: solid red 1px;*/
 }
-div#first > img{
+div.first > img{
     height: auto;
     width: 100%;
 }
