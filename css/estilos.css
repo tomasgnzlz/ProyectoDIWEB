@@ -1,36 +1,241 @@
-*{ box-sizing: border-box;  padding: 0; margin: 0;}
+*{ box-sizing: border-box;  padding: 0px; margin: 0px;}
 
-/*CABECERA*/
+/*FUENTES*/
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 100;
+    font-style: normal;    
+}
+
+.bebas-neue-regular{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dela-gothic{
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  
+  
+
+
+/*********************************CABECERA*********************************/
 header{
+    display: flex;
+    flex-flow: column nowrap;
     position: absolute;
     width: 100%;
-    border: solid black 1px;
     padding: .5rem;
 }
 
-header > div#titulo{
+header > div#titulo-principal{
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header > div.cabecera{
     display: flex;
     justify-content: space-around;
+    flex: 0 0 auto;
 }
-header > div#titulo > img{
-    width: 5rem;
-    height: 5rem;
+
+header > div.cabecera > img#logo-uv, #search{ display: none; }
+
+header > div.cabecera > form{
+    border: solid white 1px;
+    border-radius: 10px;
+    display: flex;
+    padding-left: 10px;
+    width: 60%;
 }
-header > h1#tituloPrincipal{
-    font-family: 'DelaGothicOne';
-    text-transform: uppercase;
-    font-weight: bold;
+header > div.cabecera > form > input{
+    background: none;
+    border: none;
+    padding: 10px;
+}
+header > div.cabecera > form > input::placeholder{
     color: white;
-
-}
-#login{
-    color: red;
+    font-weight: bold;
 }
 
 
 
-div.first > img{
-    height: auto;
+
+
+/*MENU DESPLEGABLE*/
+div.menu{
+    background-color: grey;
+    width: 300px;
+    position: absolute; 
+    left:-300px;
+    top:4.5rem;
+    transition: transform 0.5s ease;
+    z-index: 2;
+}
+
+div.menu > div.cabecera-menu{
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+}
+div.menu > div.cabecera-menu > img{
+    background-color: grey;
+    padding: 10px;
+}
+
+div.menu > ul{
+    padding: 1rem;
+    background-color: green;
+}
+
+div.menu > ul{ list-style: none; }
+div.menu > ul > li{ 
+    text-decoration: none; 
+    background-color: black;
+    padding: .8rem;
+    margin: .5rem;
+
+}
+div.menu > ul > li > a{ 
+    text-decoration: none; 
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left: 30px;
+}
+div.menu > div.envios{
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+div.menu > div.envios > p{
+    padding: 0px 7px 0px 7px;
+    font-size: 17px;
+}
+div.menu > div.logotipo-pie > p{
+    font-size: 10px;
+}
+
+.menu-abierto {
+    transform: translateX(300px); /* o el valor que desees para el desplazamiento */
+}
+
+
+
+
+
+
+
+/*********************************CONTENIDO*********************************/
+div.first > img{ height: auto; width: 100%; }
+
+
+/*********************************PIE_DE_PAGINA*********************************/
+/*El pie de página es el mismo para todos los frames, solo sufre modificaciones cuando se pasa de una version a otra*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+footer > div.formulario-pie{
+    border: solid black 1px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+footer > div.formulario-pie > p{
+    flex: 100%;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-size: 15px;
+}
+
+footer > div.formulario-pie > form{
+    display: flex;
+    justify-content: center;
     width: 100%;
+}
+
+footer > div.formulario-pie > form > div.email-pie{
+    border: solid white 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 5px 0px 5px;
+    margin-right: 20px;
     
+}
+
+footer > div.formulario-pie > form > div.email-pie > input{
+    border: none;
+    background: none;
+    margin-left: .5rem;
+}
+
+footer > div.formulario-pie > form > div.email-pie > input::placeholder{
+    color:white ;
+    font-weight: bold;
+}
+
+footer > div.formulario-pie > form > div.boton-pie{
+    border: solid white 1px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+    
+}
+
+.formulario-pie input[type="button"] {
+    border: none; 
+    background: none; 
+    
+    color: black; 
+    margin: 10px;
+    font-weight: bold;
+}
+
+div.logotipo-pie{
+    padding: .5rem;
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+
+footer > div.logotipo-pie > div.nombre-pie > :nth-child(1){
+    width: 300px;
+}
+footer > div.logotipo-pie > p{
+    font-size: 10px;
+
+}
+
+footer > div.informacion-pie{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin: .5rem;
+}
+footer > div.informacion-pie > a{ 
+    text-decoration: underline;
+    color: white;
+    font-size: 9px;
 }

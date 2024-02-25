@@ -5,36 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanVogue</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <!--Funciones JQuery-->
+    <script src="dependencias/jquery-3.7.1.min.js" type="text/javascript"></script>
+    <script src="js/funciones.js"></script>
 </head>
 <body>
-    <div id="contenido">
-        <header>
-            <div id="titulo">
-                <img src="images/iconos(svg)/menu-blanco.svg" alt="icono-menu" id="logo-menu">
-                <img src="images/iconos(svg)/logo-wh.svg" alt="logo" id="logo-uv">
-                <img src="images/iconos(svg)/login-blanco.svg" alt="icono-login" id="login">
-                <img src="images/iconos(svg)/home-blanco.svg" alt="icono-home" id="home">
-                <img src="images/iconos(svg)/carrito-blanco.svg" alt="icono-carrito" id="carrito">
-                <img src="images/iconos(svg)/lupa-blanco.svg" alt="icono-search" id="search">
+    <div class="menu">
+        <div class="cabecera-menu">
+            <img src="images/icons/white/flecha-blanco.svg" alt="volver">
+        </div>
+        
+        <ul class="anton-regular">
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Ropa</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Rebajas</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+        </ul>
+        
+
+        <div class="envios bebas-neue-regular">
+            <img src="images/icons/black/regalo-negro.svg" alt="icono-regalo">
+            <p>Envio gratis desde 50€</p>
+            <img src="images/icons/black/regalo-negro.svg" alt="icono-regalo">
+        </div>
+
+        
+            <div class="logotipo-pie">
+                <div id="redes-pie">
+                    <img src="images/icons/black/facebook-negro.svg"  alt="icono-facebook">
+                    <img src="images/icons/black/instagram-negro.svg" alt="icono-instagram">
+                </div>
+                <div class="nombre-pie">
+                    <img src="images/icons/black/logo-bl.svg" alt="logo" width="230">
+                    <img src="images/icons/black/registered-negro.svg" alt="registered" width="23">
+                </div>
+                <p class="dela-gothic one-regular">España | es</p>
             </div>
-    
-            
+    </div>
+    <div id="contenido">
+
+       
+        <header>
+            <div id="titulo-principal">
+                <img src="images/icons/white/logo-wh.svg" alt="logo" id="logo-principal">
+            </div>
+            <div class="cabecera">
+                <img src="images/icons/white/logo-wh.svg" alt="logo" id="logo-uv">
+                <img src="images/icons/white/menu-blanco.svg" alt="icono-menu" id="logo-menu">
+                <img src="images/icons/white/search-blanco.svg" alt="icono-search" id="search">
+
+                <form action="index.html" method="get" >
+                    <img src="images/icons/white/search-blanco.svg" alt="icono-search" id="search-form">
+                    <input type="search" name="busqueda" id="buscar" placeholder="Buscar" class="anton-regular">
+                </form>
+                
+                <img src="images/icons/white/carrito-blanco.svg" alt="icono-carrito" id="carrito">
+                <img src="images/icons/white/login-blanco.svg" alt="icono-login" id="login">
+            </div>
+
         </header>
     
         <main>
-                
-            <div class="first">
-                <img src="images/img_movil/Fotografia-1.webp" alt="modelo-1">
-            </div>
-            <div class="first">
-                <img src="images/img_movil/Fotografia-1.webp" alt="modelo-1">
-            </div>
-    
+            <div class="first"> <img src="images/img_movil/Fotografia-1.webp" alt="modelo-1"> </div>
+
         </main>
         
-        <footer>
+        <footer class="dela-gothic one-regular">
+            <div class="formulario-pie">
+                <p>Suscribete y recibe notificaciones al instante</p>
+                <form action="index.html" method="get">
+                    <div class="email-pie">
+                        <img src="images/icons/white/email-blanco.svg" alt="icono-correoelectronico">
+                        <input type="email" name="correoElectronico" id="correo-pie" placeholder="E-MAIL">
+                    </div>
+                    <div class="boton-pie">
+                        <img src="images/icons/black/email-negro.svg" alt="icono-correoelectronico">
+                        <input type="button" value="ENVIAR">
+                    </div>
+                </form>
+            </div>
+
+            <div class="logotipo-pie">
+                <div id="redes-pie">
+                    <img src="images/icons/white/facebook-blanco.svg" alt="icono-facebook">
+                    <img src="images/icons/white/instagram-blanco.svg" alt="icono-instagram">
+                </div>
+                <div class="nombre-pie">
+                    <img src="images/icons/white/logo-wh.svg" alt="logo">
+                    <img src="images/icons/white/registered-blanco.svg" alt="registered">
+                </div>
+                <p class="idioma">España | es</p>
+            </div>
+
+            <div class="informacion-pie">
+                <a href="">Política de Cookies</a>
+                <a href="">Condiciones de Venta</a>
+                <a href="">Política de privacidad</a>
+            </div>
             
         </footer>
+        
+        
+        
+
+        
 
     </div>
 </body>
