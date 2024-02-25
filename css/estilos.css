@@ -1,4 +1,13 @@
-*{ box-sizing: border-box;  padding: 0px; margin: 0px;}
+*{ box-sizing: border-box;  padding: 0; margin: 0; }
+body {
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+    overflow-y: auto;   /* Permite el desbordamiento vertical */
+}
+
+.blur{
+    filter: blur(2.5px);
+}
+
 
 /*FUENTES*/
 .anton-regular {
@@ -19,17 +28,14 @@
     font-style: normal;
 }
   
-  
-  
-
 
 /*********************************CABECERA*********************************/
+/*La cabecera de la página es el mismo para todos los frames, solo sufre modificaciones cuando se pasa de una version a otra*/
 header{
     display: flex;
     flex-flow: column nowrap;
     position: absolute;
     width: 100%;
-    padding: .5rem;
 }
 
 header > div#titulo-principal{
@@ -52,27 +58,27 @@ header > div.cabecera > form{
     padding-left: 10px;
     width: 60%;
 }
+
 header > div.cabecera > form > input{
     background: none;
     border: none;
     padding: 10px;
 }
+
 header > div.cabecera > form > input::placeholder{
     color: white;
     font-weight: bold;
 }
 
 
-
-
-
 /*MENU DESPLEGABLE*/
 div.menu{
-    background-color: grey;
+    background-color: whitesmoke;
     width: 300px;
+    height: 650px;
     position: absolute; 
     left:-300px;
-    top:4.5rem;
+    top:4.4rem;
     transition: transform 0.5s ease;
     z-index: 2;
 }
@@ -80,17 +86,16 @@ div.menu{
 div.menu > div.cabecera-menu{
     display: flex;
     justify-content: flex-end;
-    background-color: red;
+    background-color: whitesmoke;
 }
 div.menu > div.cabecera-menu > img{
     background-color: grey;
+    opacity: 50%;
     padding: 10px;
+    margin: .5rem;
 }
 
-div.menu > ul{
-    padding: 1rem;
-    background-color: green;
-}
+div.menu > ul{ padding: 1rem; }
 
 div.menu > ul{ list-style: none; }
 div.menu > ul > li{ 
@@ -110,6 +115,7 @@ div.menu > ul > li > a{
 div.menu > div.envios{
     display: flex;
     background-color: red;
+    opacity: 80%;
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -119,22 +125,111 @@ div.menu > div.envios > p{
     padding: 0px 7px 0px 7px;
     font-size: 17px;
 }
-div.menu > div.logotipo-pie > p{
-    font-size: 10px;
-}
+div.menu > div.logotipo-pie > p{ font-size: 10px; }
 
+/*Clase para que el menu se muestre*/
 .menu-abierto {
-    transform: translateX(300px); /* o el valor que desees para el desplazamiento */
+    transform: translateX(300px);
+}
+
+
+/*COOKIES*/
+#cookies-principal {
+    position: fixed;
+    left: 40%;
+    transform: translateX(-50%);
+    background-color: lightgray;
+    padding: 2rem;
+    width: 400px;
+    border-radius: 10px;
+    margin: 3rem;
+    z-index: 3;
 }
 
 
 
+div#cookies-principal > h2{ text-align: center; padding: 1rem;}
+div#cookies-principal > ul > li {
+    margin-left: 2.5rem;
+}
+.espacio-izq{ margin-left: .5rem; }
 
+hr{ margin: 1rem; }
+
+
+
+div#cookies-principal input[type="button"]{
+    background-color: grey;
+    padding: .8rem 1.5rem .8rem 1.5rem;
+    border-radius: 20px;
+    margin: .5rem;
+    border: solid 1px grey;
+    font-weight: bold;
+}
+
+div#cookies-principal > div#formulario-cookies{
+    
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
 
 
 
 /*********************************CONTENIDO*********************************/
-div.first > img{ height: auto; width: 100%; }
+main > div#content-main{
+    display: flex;
+    flex-flow: wrap;
+}
+
+main > div#content-main > div.first {
+    width: 100%;
+}
+
+main > div#content-main > div.first > img{
+    height: 100%;
+    width: 100%; 
+    text-align: center;
+}
+
+main > div#content-main > div.first > div.seccion-comprar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 1rem;
+    text-align: center;
+}
+main > div#content-main > div.first > div.seccion-comprar > h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+main > div#content-main > div.first > div.seccion-comprar > a{
+    color: black;
+}
+
+
+
+main > div#content-main > div.first > div#sudaderas-seccion{
+    color: white;
+    padding: 25rem;
+}
+
+main > div#content-main > div.first > div#camisetas-seccion{
+     color: white; 
+     padding: 25rem;
+    }
+main > div#content-main > div.first > div#accesorios-seccion{
+    color: white; 
+    padding-left: 12rem;
+   }
+
+main > div#content-main > div.first > div#sudaderas-seccion a{ color: white; }
+main > div#content-main > div.first > div#camisetas-seccion a{ color: white; }
+main > div#content-main > div.first > div#accesorios-seccion a{ color: white; }
+
+
+
+
 
 
 /*********************************PIE_DE_PAGINA*********************************/

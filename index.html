@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanVogue</title>
+    <!--Estilo-->
     <link rel="stylesheet" href="css/estilos.css">
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,55 @@
     <script src="js/funciones.js"></script>
 </head>
 <body>
+
+
+    <div id="cookies-principal" class="bebas-neue-regular">
+        <h2>Antes de ir a Urban Vogue</h2>
+        
+        <p>Usamos cookies y datos para:</p>
+        
+            <p class="espacio-izq">Si eliges aceptar todo:</p>
+                <ul>
+                    <li>Desarrollar y mejorar nuevos servicios</li>
+                    <li>Proporcionar anuncios y medir su eficacia</li>
+                    <li>Mostrar contenido personalizado en funcion de tus ajustes</li>
+                    <li>Mostrar anuncios personalizados en funcion de tus ajustes</li>
+                </ul>
+            
+
+            <hr/>
+            
+            <p class="espacio-izq">Si eliges rechazar todo no usaremos cookies para estos fines adicionales:</p>
+                <ul>
+                    <li>El contenido y los anuncios no personalizados están influidos por factores como lo que estes viendo en ese momento y tu ubicación</li>
+                    <li>El contenido y los anuncios personalizados tambien pueden incluir</li>
+                    <li>En caso necesario, también usamos cookies y datos para adaptar la experiencia de modo que sea apropiada para determinar tu edad.</li>
+                </ul>
+            
+
+        <div id="formulario-cookies">
+            <form>
+                <input type="button" value="RECHAZAR" class="boton-cookies">
+                <input type="button" value="ACEPTAR" class="boton-cookies">
+            </form>
+        </div>
+
+        <div class="logotipo-pie">
+            <div>
+                <img src="images/icons/black/facebook-negro.svg"  alt="icono-facebook">
+                <img src="images/icons/black/instagram-negro.svg" alt="icono-instagram">
+            </div>
+            <div class="nombre-pie">
+                <img src="images/icons/black/logo-bl.svg" alt="logo" width="230">
+                <img src="images/icons/black/registered-negro.svg" alt="registered" width="23">
+            </div>
+            <p class="dela-gothic one-regular">España | es</p>
+        </div>
+
+
+    </div>
+
+
     <div class="menu">
         <div class="cabecera-menu">
             <img src="images/icons/white/flecha-blanco.svg" alt="volver">
@@ -36,7 +86,7 @@
 
         
             <div class="logotipo-pie">
-                <div id="redes-pie">
+                <div>
                     <img src="images/icons/black/facebook-negro.svg"  alt="icono-facebook">
                     <img src="images/icons/black/instagram-negro.svg" alt="icono-instagram">
                 </div>
@@ -47,7 +97,9 @@
                 <p class="dela-gothic one-regular">España | es</p>
             </div>
     </div>
-    <div id="contenido">
+
+
+    <div id="contenido" class="blur">
 
        
         <header>
@@ -71,8 +123,39 @@
         </header>
     
         <main>
-            <div class="first"> <img src="images/img_movil/Fotografia-1.webp" alt="modelo-1"> </div>
-
+            <div id="content-main">
+                <div class="first">
+                    <img src="images/img_movil/Fotografia-1.webp" alt="modelo-1"> 
+                </div>
+                <div class="first">
+                    <div class="seccion-comprar">
+                        <h2 class="dela-gothic one-regular">Novedades</h2>
+                        <a class="bebas-neue-regular" href="">Comprar</a>
+                    </div> 
+                    <img src="images/img_movil/Fotografia-2.webp" alt="modelo-1"> 
+                </div>
+                <div class="first">
+                    <div class="seccion-comprar" id="sudaderas-seccion">
+                        <h2 class="dela-gothic one-regular">Sudaderas</h2>
+                        <a class="bebas-neue-regular" href="">Comprar</a>
+                    </div> 
+                    <img src="images/img_movil/Fotografia-3.webp" alt="modelo-1"> 
+                </div>
+                <div class="first">
+                    <div class="seccion-comprar" id="camisetas-seccion">
+                        <h2 class="dela-gothic one-regular">Camisetas</h2>
+                        <a class="bebas-neue-regular" href="">Comprar</a>
+                    </div> 
+                    <img src="images/img_movil/Fotografia-4.webp" alt="modelo-1"> 
+                </div>
+                <div class="first">
+                    <div class="seccion-comprar" id="accesorios-seccion">
+                        <h2 class="dela-gothic one-regular">Accesorios</h2>
+                        <a class="bebas-neue-regular" href="">Comprar</a>
+                    </div> 
+                    <img src="images/img_movil/Fotografia-5.webp" alt="modelo-1"> 
+                </div>
+            </div>
         </main>
         
         <footer class="dela-gothic one-regular">
