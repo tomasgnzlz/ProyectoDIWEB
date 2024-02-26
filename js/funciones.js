@@ -34,6 +34,13 @@ $(document).ready(function(){
         }
     })
 
+    // SLIDER
+    $("#lightSlider").lightSlider({
+        item:1,
+        loop:true
+    }); 
+  
+
     
 
   
