@@ -178,7 +178,7 @@ main > div#content-main > div.first {
     width: 100%;
 }
 
-main > div#content-main > div.first > img{
+main > div#content-main > div.first > picture > img{
     height: 100%;
     width: 100%; 
     text-align: center;
@@ -259,6 +259,8 @@ main > div#content-main > div.first > #prin-novedades > ul a{
 
 .banner{
     width: 100%;
+    background-color: black;
+    padding-bottom: .5rem;
 }
 
 .banner img{
@@ -281,13 +283,11 @@ div#productos-online {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1rem;
-
-
 }
 
 main > div#content-main > div#productos-online > article.productos{
     /*width: 45%;*/
-    flex: 0 45%;
+    flex: 0 40%;
     text-align: center;   
     position: relative;
     margin: 15px;
@@ -296,7 +296,7 @@ main > div#content-main > div#productos-online > article.productos{
 main > div#content-main > div#productos-online > article.productos > div > img.imagenes-productos{
     height: auto;
     width: 100%;
-    border: solid black 7px;
+    border: solid black 5px;
     margin-bottom: .5rem;
 }
 

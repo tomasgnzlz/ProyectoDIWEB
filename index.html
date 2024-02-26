@@ -123,35 +123,83 @@
         <main>
             <div id="content-main">
                 <div class="first">
-                    <img src="images/img_movil/Fotografia-1.webp" alt="modelo-1"> 
+                    <picture>
+                        <!-- Imagen  versión movil-->
+                        <source media="(max-width: 600px)" srcset="images/img_movil/Fotografia-1.webp" />
+
+                        <!--Imagen versión tablet-->
+                        <source media="(min-width: 600px) and (max-width: 1023px)" srcset="images/img_tablet/Fotografia-1.webp" />
+
+                        <!-- Imagen versión escritorio-->
+                        <source media="(min-width: 1024px)" srcset="images/img_escritorio/Fotografia-1.webp" />
+                        <img src="images/img_movil/Fotografia-1.webp" alt="modelo-1"> 
+                    </picture>
                 </div>
+
+                <!-- VERSION-ESCRITORIO -> METER ESTO DENTRO DE UN DIV QUE AL FINAL ESTO VA UNA AL LADO DE LA OTRA-->
                 <div class="first">
                     <div class="seccion-comprar">
                         <h2 class="dela-gothic one-regular">Novedades</h2>
                         <a class="bebas-neue-regular" href="">Comprar</a>
                     </div> 
-                    <img src="images/img_movil/Fotografia-2.webp" alt="modelo-1"> 
+                    <picture>
+                        <!-- Imagen  versión movil-->
+                        <source media="(max-width: 600px)" srcset="images/img_movil/Fotografia-2.webp" />
+
+                        <!--Imagen versión tablet-->
+                        <source media="(min-width: 600px) and (max-width: 1023px)" srcset="images/img_tablet/Fotografia-2.webp" />
+
+                        <!-- Imagen versión escritorio-->
+                        <source media="(min-width: 1024px)" srcset="images/img_escritorio/Fotografia-2.webp" />
+                        <img src="images/img_movil/Fotografia-2.webp" alt="modelo-1"> 
+                    </picture>
                 </div>
-                <div class="first">
-                    <div class="seccion-comprar" id="sudaderas-seccion">
-                        <h2 class="dela-gothic one-regular">Sudaderas</h2>
-                        <a class="bebas-neue-regular" href="">Comprar</a>
-                    </div> 
-                    <img src="images/img_movil/Fotografia-3.webp" alt="modelo-1"> 
-                </div>
+
+
                 <div class="first">
                     <div class="seccion-comprar" id="camisetas-seccion">
                         <h2 class="dela-gothic one-regular">Camisetas</h2>
                         <a class="bebas-neue-regular" href="">Comprar</a>
                     </div> 
-                    <img src="images/img_movil/Fotografia-4.webp" alt="modelo-1"> 
+                    <picture>
+                          <!-- Imagen  versión movil-->
+                          <source media="(max-width: 600px)" srcset="images/img_movil/Fotografia-4.webp" />
+
+                          <!--Imagen versión tablet-->
+                          <source media="(min-width: 600px) and (max-width: 1023px)" srcset="images/img_tablet/Fotografia-4.webp" />
+  
+                          <!-- Imagen versión escritorio-->
+                          <source media="(min-width: 1024px)" srcset="images/img_escritorio/Fotografia-3.webp" />
+                        <img src="images/img_movil/Fotografia-4.webp" alt="modelo-1"> 
+                    </picture>
                 </div>
+
+                <div class="first">
+                    <div class="seccion-comprar" id="sudaderas-seccion">
+                        <h2 class="dela-gothic one-regular">Sudaderas</h2>
+                        <a class="bebas-neue-regular" href="">Comprar</a>
+                    </div> 
+                    <picture>
+                        <!-- Imagen  versión movil-->
+                        <source media="(max-width: 600px)" srcset="images/img_movil/Fotografia-3.webp" />
+
+                        <!--Imagen versión tablet-->
+                        <source media="(min-width: 600px) and (max-width: 1023px)" srcset="images/img_tablet/Fotografia-3.webp" />
+
+                        <!-- Imagen versión escritorio-->
+                        <source media="(min-width: 1024px)" srcset="images/img_escritorio/Fotografia-4.webp" />
+                        <img src="images/img_movil/Fotografia-3.webp" alt="modelo-1"> 
+                    </picture>
+                </div>
+                
                 <div class="first">
                     <div class="seccion-comprar" id="accesorios-seccion">
                         <h2 class="dela-gothic one-regular">Accesorios</h2>
                         <a class="bebas-neue-regular" href="">Comprar</a>
                     </div> 
-                    <img src="images/img_movil/Fotografia-5.webp" alt="modelo-1"> 
+                    <picture>
+                        <img src="images/img_movil/Fotografia-5.webp" alt="modelo-1"> 
+                    </picture>
                 </div>
             </div>
         </main>

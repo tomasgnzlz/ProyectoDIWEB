@@ -78,7 +78,17 @@
                     <div id="prin-novedades">
                         <h2 class="bebas-neue-regular">Pantalones</h2>
                     </div> 
-                    <img src="../images/img_movil/Fotografia-8.webp" alt="modelo-1">
+                    <picture>
+                        <!-- Imagen  versión movil-->
+                        <source media="(max-width: 600px)" srcset="../images/img_movil/Fotografia-8.webp" />
+
+                        <!--Imagen versión tablet-->
+                        <source media="(min-width: 600px) and (max-width: 1023px)" srcset="../images/img_tablet/Fotografia-6.webp" />
+
+                        <!-- Imagen versión escritorio-->
+                        <source media="(min-width: 1024px)" srcset="../images/img_escritorio/Fotografia-5.webp" />
+                        <img src="../images/img_movil/Fotografia-8.webp" alt="modelo-1">
+                    </picture>
                 </div>
 
                 <div id="productos-online" class="bebas-neue-regular">

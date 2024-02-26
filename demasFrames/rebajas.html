@@ -78,7 +78,17 @@
                     <div id="prin-novedades">
                         <h2 class="bebas-neue-regular color-rojo">Rebajas</h2>
                     </div> 
-                    <img src="../images/img_tablet/Fotografia-7.webp" alt="modelo-7">
+                    <picture>
+                        <!-- Imagen  versión movil-->
+                        <source media="(max-width: 600px)" srcset="../images/img_tablet/Fotografia-7.webp" />
+
+                        <!--Imagen versión tablet-->
+                        <source media="(min-width: 600px) and (max-width: 1023px)" srcset="../images/img_tablet/Fotografia-7.webp" />
+
+                        <!-- Imagen versión escritorio-->
+                        <source media="(min-width: 1024px)" srcset="../images/img_escritorio/Fotografia-7.webp" />
+                        <img src="../images/img_tablet/Fotografia-7.webp" alt="modelo-1"> 
+                    </picture>
                 </div>
 
 
