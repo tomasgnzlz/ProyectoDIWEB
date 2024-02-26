@@ -23,6 +23,7 @@ $(document).ready(function(){
     });
 
     // Se pone un borde a los botones cuando se esta sobre ellos
+    
     var botonesCookies = $(".boton-cookies");
     botonesCookies.on({
         mouseenter:function () {
@@ -32,6 +33,8 @@ $(document).ready(function(){
             $(this).css("border","");
         }
     })
+
+    
 
   
 
