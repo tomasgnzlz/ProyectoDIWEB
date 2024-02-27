@@ -242,21 +242,6 @@ main > div#content-main > div.first > #prin-novedades > ul a{
      font-size: 23px; 
 }
 /*ESTILOS SLIDER*/
-
-/*main > div#content-main > div#caja-slider{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-}*/
-
-/*main > div#content-main > div#caja-slider img{
-    height: auto;
-    width: 100%;
-}*/
-/*¿?¿?¿?¿?¿?¿?¿?¿?¿?¿¿¿*/  
-
-
 .banner{
     width: 100%;
     background-color: black;
@@ -267,15 +252,6 @@ main > div#content-main > div.first > #prin-novedades > ul a{
     width: 100%;
     height: auto;
 }
-
-
-
-
-
-
-
-
-
 
 /*ESTILOS SECCIÓN CAMISETAS*/
 div#productos-online {
@@ -293,7 +269,7 @@ main > div#content-main > div#productos-online > article.productos{
     margin: 15px;
 }
 
-main > div#content-main > div#productos-online > article.productos > div > img.imagenes-productos{
+main > div#content-main > div#productos-online > article.productos > div > a > img.imagenes-productos{
     height: auto;
     width: 100%;
     border: solid black 5px;
@@ -335,6 +311,231 @@ main > div#content-main > div.caja-rebajas > p{
 }
 
 
+/*ESTILOS SECCIÓN CLICL-PRENDA*/
+main > div#content-main > nav#titulo-prendas{
+    padding-top: 10rem;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+main > div#content-main > div#contenido-prendas{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main > div#content-main > div#contenido-prendas > section#principal-prenda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: solid black 2px;
+    width: 500px;
+    padding: 2rem;
+}
+
+main > div#content-main > div#contenido-prendas > section#principal-prenda > div.pequeñas{
+    border: solid blue 2px;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100px;
+    height: 450px;
+}
+
+main > div#content-main > div#contenido-prendas > section#principal-prenda > div.pequeñas > article{
+    background-image: url("../images/img-ropa/ropa-perchero.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: .5rem;
+
+}
+
+main > div#content-main > div#contenido-prendas > section#principal-prenda > div.grande{
+    border: solid green 2px;
+    box-sizing: border-box;
+    background-image: url("../images/img-ropa/ropa-perchero.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px; /*550 los dos en vteblet*/
+    height: 450px;
+}
+
+main > div#content-main > div#contenido-prendas > section#sec-prendas{
+    border: solid red 2px;
+    width: 500px;
+    padding:  0rem 1.5rem 0rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+main > div#content-main > div#contenido-prendas > section#sec-prendas > article:nth-child(1){
+    border: solid purple 1px;
+    width: 70%;
+}
+
+main > div#content-main > div#contenido-prendas > section#sec-prendas > article:nth-child(2){ font-size: 25px; }
+
+main > div#content-main > div#contenido-prendas > section#botones-tallas-prendas{
+
+    background-color: green;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+} 
+main > div#content-main > div#contenido-prendas > section#botones-tallas-prendas > div#tallas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > div#content-main > div#contenido-prendas > section#botones-tallas-prendas > div#tallas > p{
+    border: solid black 2px;
+    width: 45px;
+    padding: .5rem;
+    text-align: center;
+    margin: .25rem;
+    background-color:lightgray ;
+}
+main > div#content-main > div#contenido-prendas > section#botones-tallas-prendas > div#tallas > p#largo-talla{ width: 70px; }
+
+main > div#content-main > div#contenido-prendas > section#botones-tallas-prendas > div#tallas img{ padding: 1rem; }
+main > div#content-main > div#contenido-prendas > form{
+    background-color: red;
+    width: 500px;
+    text-align: center;
+}
+
+input#boton-prenda {
+     color: white;
+     border: solid black 1px;
+     background-color: black;
+     border-radius: 5px;
+     width: 80%;
+     max-width: 550px;
+     padding: .5rem;
+     height: 3rem;
+     margin: 1rem;
+     font-size: 20px;
+     flex: 100%;
+     cursor: pointer;
+}
+
+/*ESTILOS SECCIÓN CARRITO*/
+main > div#content-main > div#carrito-principal{
+    border: black solid;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+main > div#content-main > div#carrito-principal > div.secciones-carrito{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+main > div#content-main > div#carrito-principal > div.secciones-carrito > div{
+    border: solid black 1px;
+    border-top: 0px;
+    padding: .5rem;
+}
+main > div#content-main > div#carrito-principal  div.primero{
+    text-align: center;
+    flex: 55%;   
+}
+main > div#content-main > div#carrito-principal  div.segundo{
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > div#content-main > div#carrito-principal  div.tercero{
+    flex: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div#content-main > div#carrito-principal > div.contenedor-productos{
+    display: flex;
+    margin: 10px;
+    border-radius: 5px;
+    border: solid black 1px;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+main > div#content-main > div#carrito-principal > div.contenedor-productos > div.primero >div.recuadro-imagen-carrito{
+}
+
+main > div#content-main > div#carrito-principal > div.contenedor-productos > div.primero >div.recuadro-imagen-carrito img{
+    width: 190px;
+    height: auto;
+    border: solid black 4px;
+    margin: .5rem;
+}
+span.mas-menos{
+    align-items: center;
+    background-color: red;
+    padding:  0px 10px 0px 10px;
+    cursor: pointer;
+}
+#espacio{
+    margin-top: 3rem;
+}
+main > div#content-main > div#carrito-principal > form{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main > div#content-main > div#carrito-principal > form > div#cajaCarrito{
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+main > div#content-main > div#carrito-principal > form > div#cajaCarrito > div.codigo{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 70%;
+    padding: .5rem;
+}
+main > div#content-main > div#carrito-principal > form > div#cajaCarrito > div.codigo > input{
+    max-width: 100px;
+    height: 25px;
+    border: none;
+    background: none;
+}
+main > div#content-main > div#carrito-principal > form  > div#cajaCarrito > div#total{
+    width: 150px;
+    margin-left: 5%;
+}
+main > div#content-main > div#carrito-principal > form >  input#boton-carro {
+    color: white;
+    border: solid black 1px;
+    background-color: black;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 550px;
+    padding: .5rem;
+    height: 3rem;
+    margin: 1rem;
+    font-size: 20px;
+    flex: 100%;
+    cursor: pointer;
+}
 
 
 
@@ -436,4 +637,13 @@ footer > div.informacion-pie > a{
     text-decoration: underline;
     color: white;
     font-size: 9px;
+}
+
+@media(min-width:720px){
+	
+    /*SECCIÓN CARRITO COMPRA*/
+    main > div#content-main > div#carrito-principal > div.contenedor-productos > div.primero >div.recuadro-imagen-carrito img{
+        width: 220px;
+    }
+
 }
