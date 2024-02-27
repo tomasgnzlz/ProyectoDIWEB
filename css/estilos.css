@@ -616,7 +616,7 @@ main > div#content-main > div#content-acercade > article#formularioContacto > fo
 }
 */
 .placeholder-moved::placeholder {
-    color: blue;
+    color: red;
     font-size: 10px;
     transition: color 0.5s ease;
     transform: translateY(-45%); 
@@ -630,6 +630,7 @@ p.texto-error-campos{
     opacity: 0; 
     transition: opacity 0.5s ease; 
     padding-top: 5px;
+    margin-left: 2.5rem;
 }
 
 
