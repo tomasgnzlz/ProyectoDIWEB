@@ -469,8 +469,8 @@ main > div#content-main > div#carrito-principal > div.contenedor-productos{
     border: solid black 1px;
     font-weight: bold;
     font-size: 15px;
-    
 }
+
 main > div#content-main > div#carrito-principal > div.contenedor-productos > div.primero >div.recuadro-imagen-carrito{
 }
 
@@ -486,9 +486,7 @@ span.mas-menos{
     padding:  0px 10px 0px 10px;
     cursor: pointer;
 }
-#espacio{
-    margin-top: 3rem;
-}
+#espacio{  margin-top: 3rem; }
 main > div#content-main > div#carrito-principal > form{
     margin: 0 auto;
     width: 100%;
@@ -499,12 +497,14 @@ main > div#content-main > div#carrito-principal > form{
     flex-direction: column;
     align-items: center;
 }
+
 main > div#content-main > div#carrito-principal > form > div#cajaCarrito{
     
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
 main > div#content-main > div#carrito-principal > form > div#cajaCarrito > div.codigo{
     background-color: black;
     color: white;
@@ -512,16 +512,19 @@ main > div#content-main > div#carrito-principal > form > div#cajaCarrito > div.c
     width: 70%;
     padding: .5rem;
 }
+
 main > div#content-main > div#carrito-principal > form > div#cajaCarrito > div.codigo > input{
     max-width: 100px;
     height: 25px;
     border: none;
     background: none;
 }
+
 main > div#content-main > div#carrito-principal > form  > div#cajaCarrito > div#total{
     width: 150px;
     margin-left: 5%;
 }
+
 main > div#content-main > div#carrito-principal > form >  input#boton-carro {
     color: white;
     border: solid black 1px;
@@ -536,6 +539,102 @@ main > div#content-main > div#carrito-principal > form >  input#boton-carro {
     flex: 100%;
     cursor: pointer;
 }
+
+/*ESTILOS SECCIÓN ACERCA DE NOSOTROS*/
+main > div#content-main > div#content-acercade{
+    
+    padding-top: 10rem;
+}
+main > div#content-main > div#content-acercade > article.desc-acercade{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+main > div#content-main > div#content-acercade > article.desc-acercade > p{
+    padding: 1rem 0rem 0rem 1rem;
+}
+main > div#content-main > div#content-acercade > article.desc-acercade > ul{
+    padding: 1rem 0rem 0rem 1.5rem;
+}
+
+main > div#content-main > div#content-acercade > article#formularioContacto{
+    border: solid gray 1px;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+/*FORMULARIO DE CONTACTO*/
+main > div#content-main > div#content-acercade > article#formularioContacto > form{
+    padding: 1rem;
+    
+    max-width: 600px;
+    text-align: center;
+}
+main > div#content-main > div#content-acercade > article#formularioContacto > form > div.mod-contacto{
+    
+    border: solid gray 1px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+}
+main > div#content-main > div#content-acercade > article#formularioContacto > form > div.mod-contacto > input{
+    background: none;
+    border: none;
+    padding-left: .5rem;
+    width: 100;
+}
+main > div#content-main > div#content-acercade > article#formularioContacto > form >textarea{
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 5px;
+}
+main > div#content-main > div#content-acercade > article#formularioContacto > form > input[type="button"]{
+    background-color: gray;
+    border: solid 1px gray;
+    padding: .5rem;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    max-width: 500px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/*MODIFICACIONES ESTILOS FORMULARIOS*/
+/*
+main > div#content-main > div#content-acercade > article#formularioContacto > form > div.mod-contacto > input::placeholder{
+    transform: translateY(-50%); 
+    font-size: 10px;
+    color: red;
+}
+*/
+.placeholder-moved::placeholder {
+    color: blue;
+    font-size: 10px;
+    transition: color 0.5s ease;
+    transform: translateY(-45%); 
+}
+
+p.texto-error-campos{
+    flex: 100%;
+    color: red;
+    font-size: 10px;
+    text-align: left;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    padding-top: 5px;
+}
+
+
+
+
 
 
 
@@ -642,8 +741,7 @@ footer > div.informacion-pie > a{
 @media(min-width:720px){
 	
     /*SECCIÓN CARRITO COMPRA*/
-    main > div#content-main > div#carrito-principal > div.contenedor-productos > div.primero >div.recuadro-imagen-carrito img{
-        width: 220px;
-    }
-
+    main > div#content-main > div#carrito-principal > div.contenedor-productos > div.primero >div.recuadro-imagen-carrito img{ width: 220px; }
+    main > div#content-main > div#carrito-principal > div.contenedor-productos{ font-size: 17px; }
+    main > div#content-main > div#carrito-principal{ font-size: 17px; max-width: 800px;}
 }

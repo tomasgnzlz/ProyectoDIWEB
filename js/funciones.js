@@ -39,22 +39,35 @@ $(document).ready(function(){
         item:1,
         loop:true
     }); 
-  
+});
 
-    
+//ERROR EN FORMULARIOS
+/*
+$(document).ready(function() {
+    $("#boton-error").on("click", function() {
+        $(".error-campos").each(function() {
+            $(this).addClass('placeholder-moved');
+        });
+    });
+});*/
+$(document).ready(function() {
 
-  
-
-
-
- 
-
-
-
-
-
-
+    $("#boton-error").on("click", function() {
+        $(".error-campos").each(function() {
+            if ($(this).val().trim() === "") {
+                // Agrega la clase y muestra el mensaje de error
+                $(this).addClass('placeholder-moved');
+                $(".texto-error-campos").css("opacity","1");
+            }
+        });
+    });
 
 });
+
+
+
+
+
+
 
 
