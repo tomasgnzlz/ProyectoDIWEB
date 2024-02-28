@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanVogue</title>
+    <title>procesocOMpra</title>
     <!--Estilo-->
     <link rel="stylesheet" href="../css/estilos.css">
     <!--Fuentes-->
@@ -13,10 +13,8 @@
     <!--Funciones JQuery-->
     <script src="../dependencias/jquery-3.7.1.min.js"></script>
     <script src="../js/funciones.js"></script>
-   
 </head>
 <body>
-
     <div class="menu">
         <div class="cabecera-menu">
             <img src="../images/icons/white/flecha-blanco.svg" alt="volver">
@@ -73,71 +71,50 @@
         </header>
         <main>
             <div id="content-main">
-                <div id="content-acercade" class="bebas-neue-regular">
-                    
-                    <article class="desc-acercade">
-                        <h2>Acerca de Nosotros</h2>
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                            deserunt mollit anim id est laborum."
-                        </p>
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                            deserunt mollit anim id est laborum."
-                        </p>
-                    </article>
-                    <article class="desc-acercade">
-                        <h2>Preguntas Frecuentes</h2>
-                        <ul>
-                            <li><p>¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p></li>
-                            <li><p>¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p></li>
-                            <li><p>¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p></li>
-                            <li><p>¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p></li>
-                            <li><p>¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p></li>
-                            <li><p>¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p></li>
-                        </ul>
-                        
-                    </article>
-                    <article class="desc-acercade bebas-neue-regular" id="formularioContacto">
-                        <h2>Contacta con nosotros</h2>
+                <nav id="titulo-prendas" class="bebas-neue-regular"><h2>Proceso de Compra</h2></nav>
+                <div id="proceso-compra" class="bebas-neue-regular">
+                        <form action="purchaseProcess.html" method="get">
 
-                        <form action="../index.html" method="get">
-
-                            <div class="mod-contacto">
-                                <img src="../images/icons/black/login-negro.svg" alt="icono-user">
-                                <input type="text" name="nombreapellidos" id="nomape-acercade" placeholder="NOMBRE Y APELLIDOS" class="bebas-neue-regular error-campos">
-                                <p class="texto-error-campos">Completa este campo para continuar</p>
+                            <h3>Datos Personales</h3>
+                            <div class="campos-formulario">
+                                <input type="text" name="nombre" id="nombreyapellidos" placeholder="NOMBRE Y APELLIDOS" class="bebas-neue-regular">
+                                <p class="error-campos-compra">Completa este campo para continuar</p>
+                                <input type="email" name="nombre" id="email-pagos" placeholder="EMAIL" class="bebas-neue-regular">
+                                <p class="error-campos-compra">Completa este campo para continuar</p>
                             </div>
                             
-                            <div class="mod-contacto">
-                                <img src="../images/icons/black/email-negro.svg" alt="icono-correo">
-                                <input type="email" name="correoacercade" id="correo-acercade" placeholder="EMAIL" class="bebas-neue-regular error-campos">
-                                <p class="texto-error-campos">Completa este campo para continuar</p>
+                            <h3>ENVÍO A DOMICILIO</h3>
+                            <div class="campos-formulario">
+                                <div class="campos-form-dobles">
+                                    <input type="text" name="ciudad" id="ciudad-envio-pago3" placeholder="CIUDAD" class="bebas-neue-regular">
+                                    <input type="text" name="codigo" id="codigo-envio-pago2" placeholder="CÓDIGO POSTAL" class="bebas-neue-regular">
+                                    <p class="error-campos-compra">Completa estos campos para continuar</p>
+                                    <p class="error-campos-compra">Completa estos campos para continuar</p>
+                                </div>
+                                <input type="text" name="nombre" id="direc-envio-pago4" placeholder="DIRECCIÓN" class="bebas-neue-regular">
+                                <p class="error-campos-compra">Completa estos campos para continuar</p>
                             </div>
-                            <div class="mod-contacto">
-                                <input type="text" name="asunto" id="asunto-acercade" placeholder="ASUNTO" class="bebas-neue-regular error-campos">
-                                <p class="texto-error-campos"><br>Completa este campo para continuar</p>
+                            <h3>Pago con tarjeta</h3>  
+                            
+                            <div class="campos-formulario">
+                                <input type="text" name="nombre" id="direc-envio-pago1" placeholder="NOMBRE DEL TITULAR" class="bebas-neue-regular">
+                                <p class="error-campos-compra">Completa estos campos para continuar</p>
+                                <input type="text" name="nombre" id="direc-envio-pago2" placeholder="NÚMERO DE TARJETA" class="bebas-neue-regular">
+                                <p class="error-campos-compra">Completa estos campos para continuar</p>
+                                <div class="campos-form-dobles">
+                                    <input type="text" name="codigo" id="codigo-envio-pago3" placeholder="CÓDIGO SEGURIDAD" class="bebas-neue-regular">
+                                    <input type="text" name="ciudad" id="ciudad-envio-pago4" placeholder="FECHA CADUCIDAD" class="bebas-neue-regular">
+                                    <p class="error-campos-compra">Completa estos campos para continuar</p>
+                                    <p class="error-campos-compra">Completa estos campos para continuar</p>
+                                </div>
                             </div>
-                            <textarea name="comentarios" id="id-textoarea" cols="52" rows="10" placeholder="COMENTARIOS...*" class="bebas-neue-regular error-campos"></textarea>
-
-                            <input type="button" value="ENVIAR" class="bebas-neue-regular" id="boton-error">
-
+                            <input type="button" value="TRAMITAR COMPRA" id="boton-error-compra" class="bebas-neue-regular">      
                         </form>
-                    </article>
-
                 </div>
-                
-                
             </div>
         </main>
         
-        <footer class="dela-gothic one-regular">
+        <footer class="dela-gothic one-regular" id="espacio">
             <div class="formulario-pie">
                 <p>Suscribete y recibe notificaciones al instante</p>
                 <form action="index.html" method="get">
@@ -165,9 +142,9 @@
             </div>
 
             <div class="informacion-pie">
-                <a href="politicasCookies.html">Política de Cookies</a>
-                <a href="politicasVenta.html">Condiciones de Venta</a>
-                <a href="politicasPrivacidad.html">Política de privacidad</a>
+                <a href="acercaDe.html">Política de Cookies</a>
+                <a href="acercaDe.html">Condiciones de Venta</a>
+                <a href="acercaDe.html">Política de privacidad</a>
             </div>
             
         </footer>

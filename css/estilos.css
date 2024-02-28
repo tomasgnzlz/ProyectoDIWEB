@@ -608,13 +608,6 @@ main > div#content-main > div#content-acercade > article#formularioContacto > fo
 }
 
 /*MODIFICACIONES ESTILOS FORMULARIOS*/
-/*
-main > div#content-main > div#content-acercade > article#formularioContacto > form > div.mod-contacto > input::placeholder{
-    transform: translateY(-50%); 
-    font-size: 10px;
-    color: red;
-}
-*/
 .placeholder-moved::placeholder {
     color: red;
     font-size: 10px;
@@ -632,11 +625,86 @@ p.texto-error-campos{
     padding-top: 5px;
     margin-left: 2.5rem;
 }
+/*MOD P MOD P MOD P MOD P MOD P MOD P MOD P*
+
+/*ESTILOS SECCIÓN PROCESO DE COMPRA*/
+main > div#content-main > div#proceso-compra{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    
+}
+main > div#content-main > div#proceso-compra > form{
+    margin: .5rem;
+    text-align: center;
+}
+main > div#content-main > div#proceso-compra > form > h3{
+    text-align: left;
+    margin: .5rem;
+}
+
+main > div#content-main > div#proceso-compra > form > div.campos-formulario{
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+
+}
+main > div#content-main > div#proceso-compra > form > div.campos-formulario >input{
+    border: none;
+    background: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    margin: 12px;
+    flex: 100%;
+    padding: .5rem;
+}
 
 
+main > div#content-main > div#proceso-compra > form > div.campos-formulario > div.campos-form-dobles{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main > div#content-main > div#proceso-compra > form > div.campos-formulario > div.campos-form-dobles > input{
+    flex: 40%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    margin: 12px;
+    padding: .5rem;
+    padding-left: 0rem;
+}
 
+main > div#content-main > div#proceso-compra > form > div.campos-formulario > div.campos-form-dobles  p{
+    flex: 40%;
+}
+main > div#content-main > div#proceso-compra > form >input[type="button"]{
+    background-color: black;
+    width: 90%;
+    height: 40px;
+    border: solid 2px black;
+    margin: 1rem;
+    color: white;
+    font-size: 20px;   
+    cursor: pointer;
+}
+/*EL TEXTO CAMBIARÁ CUANDO SE LE DE AL BOTON*/
+p.error-campos-compra{
+    color: red;
+    font-size: 10px;
+    text-align: left;
+    display: none;
+    /*opacity: 0; */
+    transition: opacity 0.5s ease; 
+    margin-left: 2rem;
+}
 
-
+/*SECCIÓN DE LOGIN*/
 
 
 
@@ -740,9 +808,14 @@ footer > div.informacion-pie > a{
 }
 
 @media(min-width:720px){
+
+    /*SECCIÓN ACCESORIOS*/
+    main > div#content-main > div#productos-online > article.accesorios{ flex: 0 40%; }
 	
     /*SECCIÓN CARRITO COMPRA*/
     main > div#content-main > div#carrito-principal > div.contenedor-productos > div.primero >div.recuadro-imagen-carrito img{ width: 220px; }
     main > div#content-main > div#carrito-principal > div.contenedor-productos{ font-size: 17px; }
     main > div#content-main > div#carrito-principal{ font-size: 17px; max-width: 800px;}
+    /*SECCIÓN DE PROCESO DE COMPRA*/
+    main > div#content-main > div#proceso-compra > form  input::placeholder{}
 }

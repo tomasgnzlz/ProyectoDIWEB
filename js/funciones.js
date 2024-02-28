@@ -41,28 +41,28 @@ $(document).ready(function(){
     }); 
 });
 
-//ERROR EN FORMULARIOS
-/*
-$(document).ready(function() {
-    $("#boton-error").on("click", function() {
-        $(".error-campos").each(function() {
-            $(this).addClass('placeholder-moved');
-        });
-    });
-});*/
+//ERROR EN FORMULARIOS DE CONTACTO
 $(document).ready(function() {
 
     $("#boton-error").on("click", function() {
         $(".error-campos").each(function() {
-            if ($(this).val().trim() === "") {
-                // Agrega la clase y muestra el mensaje de error
                 $(this).addClass('placeholder-moved');
                 $(".texto-error-campos").css("opacity","1");
-            }
         });
     });
 
 });
+
+/*ERROR EN FORMULARIOS DE PROCESO DE COMPRA*/ 
+$(document).ready(function() {
+    $("#boton-error-compra").on("click", function() {
+        $(".bebas-neue-regular").each(function() {
+                $(this).addClass('placeholder-moved');
+                $(this).siblings(".error-campos-compra").css("display", "flex");
+        });
+    });
+});
+
 
 
 
